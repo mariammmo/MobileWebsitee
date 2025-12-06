@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="file.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script defer src="script.js"></script>
+  <title>book store</title>
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="top-bar">
+      <div class="top-bar__content">
+        <section class="phone">
+          <i class="fa-solid fa-phone icon"></i>
+          <span>111-222-3333</span>
+        </section>
+        <section class="email">
+          <i class="fa-solid fa-envelope icon"></i>
+          <span>info@mobilestore.com</span>
+        </section>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="bottom-bar__content">
+        <a href="#" class="logo">
+          <img class="logo__img" src="mobile-phone-store-logo-vector-26951215.jpg" alt="logo">
+        
+        </a>
+
+    
+        <nav class="nav">
+          <ul class="nav__list">
+           
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Categories</a>
+            </li>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Upcoming products</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Cart</a>
+            </li>
+            <li class="search-container">
+                <input type="text" placeholder="Search..." />
+                <button type="submit">
+                   <i class="fas fa-search"></i>
+                </button>
+            </li>
+            
+              
+            <li class="profile-pic">
+                <img class="profile-img" src="12225935.png" alt="Profile">
+            </li>
+
+          </ul>
+        
+    
+        </nav>
+  
+      </div>
+    </div>
+    <div id="slider">
+        <figure>
+            <img src="yFVTwgKyQ3uuEf4DRx6imK.jpg">
+            <img src="1b2ce616aeaea773af685ebaaf353f94.jpg">
+            <img src="1938fb5b0e378db87dbba8db812bac99.jpg">
+            <img src="1aaa4dd71d6267e6504c7d73fe55a834.jpg">
+        </figure>
+        <div class="arrow prev" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="arrow next" onclick="moveSlide(1)">&#10095;</div>
+    </div>
+    <!-- Books sliding -->
+    <section class="picked-for-you">
+        <div class="category-header">
+            <h1 class="category-title">Picked for you</h1>
+            <hr class="divider">
+            <div class="subcategory"></div>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product cards will be generated here -->
+            <!-- This example shows 6 products, but you can add as many as you need -->
+            <div class="product-card">
+                <img src="Oppo A5 Pro 4G.jpg" alt="Book Title 1" class="product-image">
+                <div class="product-name">Oppo A5 Pro 4G</div>
+                <div class="product-price">$5.00</div>
+            </div>
+            <div class="product-card">
+                <img src="Oppo find x5 Pro.jpg" alt="Book Title 1" class="product-image">
+                <div class="product-name">Oppo find x5 Pro</div>
+                <div class="product-price">$6.00</div>
+            </div>
+            <div class="product-card">
+                <img src="Oppo Find X7 Ultra.jpg" alt="Book Title 1" class="product-image">
+                <div class="product-name">Oppo Find X7 Ultra</div>
+                <div class="product-price">$7.00</div>
+            </div>
+            <div class="product-card">
+                <img src="Oppo Find N5 Series.jpg" alt="Book Title 1" class="product-image">
+
+                <div class="product-name">Oppo Find N5 Series</div>
+                <div class="product-price">$8.00</div>
+            </div>
+            <div class="product-card">
+                <img src="honormaya.jpg" alt="Book Title 1" class="product-image">
+                <div class="product-name">Honor 200 Pro</div>
+                <div class="product-price">$9.00</div>
+            </div>
+            <div class="product-card">
+                <img src="HUAWEI Mate X5.jpg" alt="Book Title 1" class="product-image">
+                <div class="product-name">HUAWEI Mate X5</div>
+                <div class="product-price">$10.00</div>
+            </div>
+        </div>
+        <section class="Best-Sellers">
+            <div class="category-header">
+                <h1 class="category-title">Best Sellers</h1>
+                <hr class="divider">
+                <div class="subcategory"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product cards will be generated here -->
+                <!-- This example shows 6 products, but you can add as many as you need -->
+                <div class="product-card">
+                    <img src="bdfb5727bfed3945db31eebf3df16d11.jpg" alt="Book Title 1" class="product-image">
+                    <div class="product-name"> Samsung Galaxy S25 Ultra</div>
+                    <div class="product-price">$16.00</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://i.pinimg.com/736x/c8/59/a5/c859a5cd111e7a501838fd7f4bb6ad8b.jpg" alt="Book Title 1" class="product-image">
+                    <div class="product-name">Samsung Galaxy A06</div>
+                    <div class="product-price">$10.00</div>
+                </div>
+                <div class="product-card">
+                    <img src="Apple iPhone 17 Pro.jpg" alt="Book Title 1" class="product-image">
+                    <div class="product-name">Apple iPhone 17 Pro</div>
+                    <div class="product-price">$6.00</div>
+                </div>
+                <div class="product-card">
+                    <img src="72cff5f64d1ef3c215164e581a76d21e.jpg" alt="Book Title 1" class="product-image">
+    
+                    <div class="product-name">Apple iPhone 17</div>
+                    <div class="product-price">$5.00</div>
+                </div>
+                <div class="product-card">
+                    <img src="Xiaomi Redmi 14C 4G.jpg" alt="Book Title 1" class="product-image">
+                    <div class="product-name">Xiaomi Redmi 14C 4G</div>
+                    <div class="product-price">$20.00</div>
+                </div>
+                <div class="product-card">
+                    <img src="Samsung Galaxy A55 5G.jpg" alt="Book Title 1" class="product-image">
+                    <div class="product-name">Samsung Galaxy A55 5G</div>
+                    <div class="product-price"></div>
+                </div>
+            </div> 
+            <section class="Last-Relases">
+                <div class="category-header">
+                    <h1 class="category-title">Last Released</h1>
+                    <hr class="divider">
+                    <div class="subcategory"></div>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product cards will be generated here -->
+                    <!-- This example shows 6 products, but you can add as many as you need -->
+                    <div class="product-card">
+                        <img src="HUAWEI Pura 80.jpg" alt="Book Title 1" class="product-image">
+                        <div class="product-name">HUAWEI Pura 80</div>
+                        <div class="product-price">$11.00</div>
+                    </div>
+                    <div class="product-card">
+                        <img src= "Iphone 17 Pro Max.jpg" alt="Book Title 1" class="product-image">
+                        <div class="product-name">Iphone 17 Pro Max</div>
+                        <div class="product-price">$15.00</div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Iphone 17 promax.png" alt="Book Title 1" class="product-image">
+                        <div class="product-name">Iphone 17 </div>
+                        <div class="product-price">$21.00</div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Iphone 16.jpg" alt="Book Title 1" class="product-image">
+        
+                        <div class="product-name">Iphone 16</div>
+                        <div class="product-price">$8.00</div>
+                    </div>
+                    <div class="product-card">
+                        <img src="Iphone 13.jpg"alt="Book Title 1" class="product-image">
+                        <div class="product-name">Iphone 13</div>
+                        <div class="product-price">$10.00</div>
+                    </div>
+                    <div class="product-card">
+                        <img src= "Iphone 13 Pro max.jpg"alt="Book Title 1" class="product-image">
+                        <div class="product-name">Iphone 13 Pro max</div>
+                        <div class="product-price">$14.00</div>
+                    </div>
+                </div>
+
+                <h1 class="video-header">Videos</h1>
+    
+                <div class="video-container">
+                    <!-- Video 1 - Embedded YouTube/Vimeo -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/3Kx-ZrIkUws?s=drgYG1CyRln57M3D"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2 - HTML5 Video -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/3i1OB6wKYms?si=uX8Pe1KclmT410uf" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                        </div>
+                    </div>
+                    
+                    <!-- Video 3 - With Special Info -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/M0au92yebLQ?si=_0Ae5KeA2z0rwG7I" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                        </div>
+                    </div>
+                    
+                    <!-- Video 4 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/hd0ur9CeOHk?si=JlfLVR01Nn1n-4z9" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                        </div>
+                    </div>
+                </div>
+                      <!--         WHY US PARAGRAPH      -->
+                <section class="why-us">
+                    <div class="container">
+                        <h2>WHY US?</h2>
+                        <div class="features">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tags"></i>
+                                </div>
+                                <h3>Best Deals</h3>
+                                <p>Get access to the newest smartphones from top brands. Whether you're into photography, performance, or gaming, we have models that fit every need and budget.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <h3>Wide Assortment</h3>
+                                <p>Find everything you need in one place. Our wide assortment includes top-brand smartphones, protective cases, power banks, chargers, smartwatches, and more to suit every lifestyle.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <h3>Easy Payment</h3>
+                                <p>We believe in making transactions accessible and convenient for everyone. That's why we have multiple payment channels available.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <h3>On Time Delivery</h3>
+                                <p>Experience quick and reliable delivery right to your doorstep. Track your order easily and receive your mobile products in perfect condition, on time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                     <!-- button contact us and feedback   -->
+                <div class="button-container">
+                <a href="#" class="custom-button contact-btn">About US</a>
+                <a href="#" class="custom-button feedback-btn">FEEDBACK</a>
+                </div>
+                <div class="social-media">
+                    <a href="#" class="social-item">
+                        <i class="social-icon fab fa-youtube"></i>
+                        <span class="social-username">@MobileStore.com</span>
+                    </a>
+                    <a href="#" class="social-item">
+                        <i class="social-icon fab fa-twitter"></i>
+                        <span class="social-username">@MobileStore.com</span>
+                    </a>
+                    <a href="#" class="social-item">
+                        <i class="social-icon fab fa-facebook"></i>
+                        <span class="social-username">@MobileStore.com</span>
+                    </a>
+                    <a href="#" class="social-item">
+                        <i class="social-icon fab fa-instagram"></i>
+                        <span class="social-username">@MobileStore.com</span>
+                    </a>
+                </div>
+
+
+
+
+
+            </div> 
+            </body>
+            </html>
+                
+      
+  </header>
+
+</body>
+</html>
+.hamburger {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar {
+    height: 2px;
+    width: 27px;
+    background-color: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+  }
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
