@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Mobile Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For icons -->
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar__content">
+        <section class="phone">
+          <i class="fa-solid fa-phone icon"></i>
+          <span>111-222-3333</span>
+        </section>
+        <section class="email">
+          <i class="fa-solid fa-envelope icon"></i>
+          <span>info@mobilestore.com</span>
+        </section>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+      <div class="bottom-bar__content">
+        <a href="#" class="logo">
+          <img class="logo__img" src="images/logo.jpg" alt="logo">
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Categories</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Upcoming products</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Cart</a></li>
+            <li class="search-container">
+              <input type="text" placeholder="Search..." />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </li>
+            <li class="profile-pic">
+              <img class="profile-img" src="images/profile img.png" alt="Profile">
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+  <!--CHECKOUT -->
+  <div class="checkout-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+
+      <h3 class="section-title">Contact Information</h3>
+      <div class="two-columns">
+        <input type="text" placeholder="First name" required>
+        <input type="text" placeholder="Last name" required>
+      </div>
+      <div class="two-columns">
+        <input type="email" placeholder="Email address" required>
+        <input type="text" placeholder="Phone number" maxlength="12" inputmode="numeric" required>
+      </div>
+
+      <h3 class="section-title">Delivery Method</h3>
+      <label class="radio">
+        <input type="radio" name="delivery" checked>
+        Standard delivery (3–5 days) — FREE
+      </label>
+      <label class="radio">
+        <input type="radio" name="delivery">
+        Express delivery (1–2 days) — $10
+      </label>
+
+      <h3 class="section-title">Shipping Information</h3>
+      <div class="two-columns">
+        <input type="text" placeholder="Country" required>
+        <input type="text" placeholder="City" required>
+      </div>
+      <div class="two-columns">
+        <input type="text" placeholder="Address" required>
+        <input type="text" placeholder="Postal code" maxlength="6" inputmode="numeric" required>
+      </div>
+
+      <h3 class="section-title">Payment Method</h3>
+
+      <label class="radio">
+        <input type="radio" name="payment" checked>
+        Visa
+      </label>
+
+      <div class="two-columns">
+        <input type="text" placeholder="Card number">
+        <input type="text" placeholder="Cardholder full name" required>
+      </div>
+
+      <div class="two-columns">
+        <input type="text" placeholder="Expiry date (MM/YY)">
+        <input type="text" placeholder="CVV" maxlength="3" inputmode="numeric" required>
+      </div>
+
+      <label class="radio">
+        <input type="radio" name="payment">
+        Mastercard
+      </label>
+
+      <label class="radio">
+        <input type="radio" name="payment">
+        Google Pay
+      </label>
+
+      <label class="radio">
+        <input type="radio" name="payment">
+        PayPal
+      </label>
+
+      <p class="save-login">Log in to save card information for future orders</p>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+      <h3 class="summary-title">Order Summary</h3>
+
+      <!-- ITEM 1 -->
+      <div class="cart-item">
+        <img src="images/infinix.jpg">
+        <div class="item-info">
+          <h4>infinx</h4>
+          <p>Color: green</p>
+          <p>Size: XS</p>
+          <div class="qty-controls">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="item-right">
+          <p class="item-price">$29</p>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="cart-item">
+        <img src="images/iphone2.jpg" alt="Item Image">
+        <div class="item-info">
+          <h4>iphone</h4>
+          <p>Color: black</p>
+          <p>Size: S</p>
+          <div class="qty-controls">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="item-right">
+          <p class="item-price">$14</p>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="cart-item">
+        <img src="images/samsong.jpg" alt="Item Image">
+        <div class="item-info">
+          <h4>realme</h4>
+          <p>Color: pink</p>
+          <p>Size: S</p>
+          <div class="qty-controls">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="item-right">
+          <p class="item-price">$14</p>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+      <hr>
+
+      <div class="price-box">
+        <p>Subtotal <span>$44</span></p>
+        <p>Delivery <span>FREE</span></p>
+        <p>Discount <span>$5.00</span></p>
+        <h3>Total <span>$39</span></h3>
+      </div>
+
+      <button class="pay-btn">Pay Now</button>
+      <label class="agree">
+        <input type="checkbox"> I accept the Terms & Conditions
+      </label>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <h3 class="insta-title">INSTAGRAM @MOBILESTORE</h3>
+
+    <!-- SLIDER -->
+    <div class="slider">
+      <div class="slide-track">
+        <img src="images/infinix.jpg">
+        <img src="images/iphone.jpg">
+        <img src="images/iphone2.jpg">
+        <img src="images/oppo.jpg">
+        <img src="images/realme.jpg">
+        <img src="images/redmi.jpg">
+        <img src="images/samsong.jpg">
+        <img src="images/infinix.jpg">
+        <img src="images/iphone.jpg">
+        <img src="images/iphone2.jpg">
+      </div>
+    </div>
+
+    <!--LOGOS -->
+    <div class="payments">
+      <img src="images/paypal.png" alt="PayPal">
+      <img src="images/visa.png" alt="Visa">
+      <img src="images/mastercard.png" alt="Mastercard">
+    </div>
+
+    <p class="copyright">© 2025 Mobile Store. All rights reserved.</p>
+
+  </footer>
+
+</body>
+</html>

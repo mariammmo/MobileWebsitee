@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #f4f7ff; 
+    color: #000;
+    animation: fadeIn 1s ease;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* header */
+.top-bar {
+    background: #0a1a3b;
+    color: #fff;
+    padding: 12px 0;
+}
+
+.top-bar__content {
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+   padding: 0 30px;
+    font-size: 12px;
+}
+
+.bottom-bar {
+    background: #ffffff;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.bottom-bar__content {
+    max-width: 1500px;
+    padding: 0 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__img {
+    height: 60px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.logo__img:hover {
+  transform: scale(0.9);
+  box-shadow: 0 6px 12px rgba(48, 38, 38, 0.4);
+}
+
+/* NAV */
+.nav__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav__link {
+    color: #0a1a3b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+    color: #1c4fff;
+    text-shadow: 0 0 8px rgba(28, 79, 255, 0.4);
+}
+
+/* Search */
+.search-container input {
+    padding: 8px 10px;
+    border: 1px solid #1c4fff;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-container button {
+    padding: 8px 10px;
+    background: #1c4fff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background: #0a1a3b;
+}
+
+/* Profile */
+.profile-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+/* rating*/
+.ratings-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+
+/* Left Rating */
+.left {
+    width: 60%;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.rating-row span {
+    width: 60px;
+    font-weight: 700;
+    color: #0a1a3b;
+}
+
+.bar {
+    flex: 1;
+    height: 9px;
+    border-radius: 6px;
+    background: #d7dffc;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: linear-gradient(90deg, #0a1a3b, #1c4fff);
+    animation: growBar 1.2s ease;
+}
+
+/* Right Rating */
+.right-rating-box {
+    width: 35%;
+    padding: 35px;
+    text-align: center;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ffffff, #e8edff);
+    border: 1px solid #d1d8e3;
+    box-shadow: 0px 8px 20px rgba(16, 37, 84, 0.12);
+}
+
+.right-rating-box h2 {
+    font-size: 48px;
+    color: #1c4fff;
+    margin-bottom: 8px;
+}
+
+.stars {
+    color: #0a1a3b;
+    font-size: 26px;
+    margin: 10px 0;
+    letter-spacing: 3px;
+}
+
+/*feedback */
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.feedbacks {
+    width: 50%;
+}
+
+.feedback-card {
+    background: #ffffff;
+    border: 1px solid #d7dffc;
+    padding: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    transition: 0.35s;
+    box-shadow: 0px 4px 15px rgba(28, 79, 255, 0.08);
+}
+
+.feedback-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 25px rgba(28, 79, 255, 0.16);
+}
+
+.feedback-card img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 2px solid #1c4fff;
+}
+
+.review-form {
+    width: 45%;
+}
+
+.review-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 700;
+    color: #0a1a3b;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    border: 1.5px solid #1c4fff;
+    padding: 13px;
+    margin-top: 6px;
+    border-radius: 8px;
+    outline: none;
+    background: #f9faff;
+    transition: 0.3s;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+    border-color: #0a1a3b;
+    box-shadow: 0 0 10px rgba(28, 79, 255, 0.3);
+}
+
+.review-form textarea {
+    height: 130px;
+    resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(90deg, #1c4fff, #0a1a3b);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    box-shadow: 0px 6px 15px rgba(16, 37, 84, 0.35);
+}
