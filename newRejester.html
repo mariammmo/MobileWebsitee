@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <style>
+           body {
+                background-color:  #e8f4f8;
+                font-family: 'Inter', sans-serif;
+                min-height: 500vh;
+                margin: 0;
+                overflow-y: visible;
+                overflow-x: hidden;
+            }
+            .header {
+                width: 100%;
+            }
+            /* Top Barrrrrrrrr */
+            
+            .top-bar {
+                background-color:#002c58 ;
+                
+            }
+            
+            .top-bar__content {
+                height: 30px;
+                max-width: 1200px;
+                column-gap: 20px;
+                padding: 0 30px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                font-size: 12px;
+                color: rgba(255, 255, 255, 0.35);
+                position: relative;
+                left: 120px;
+                overflow: hidden;
+            }
+                /* Bottom Barrrrrrrrr */
+            .bottom-bar {
+                background-color:#e8f4f8 ;
+            }
+            .bottom-bar__content {
+                min-height: 10px;
+                max-width: 1500px;
+                padding: 0 20px;
+                margin: 0 auto;  
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            }
+            .profile-pic {
+                width: 35px;
+                height: 35px;
+                border-radius: 60%;
+                background-color: #c1e1ec; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                margin-left: 15px;
+                right: auto;
+            }
+            
+
+            .profile-img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .profile-pic:hover {
+                transform: scale(1.05);
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            
+            .logo {
+                vertical-align: sub;
+                display: flex;
+                column-gap: 10px;
+                align-items: right;
+                
+            }
+            .logo__img {
+                height: 60px;
+                border-radius: 20px;
+                }
+            .logo:hover{
+                    transform: scale(0.9);
+                    box-shadow: 0 6px 12px rgba(48, 38, 38, 0.4);
+                    border-radius: 20px;
+            }
+            .nav__item {
+                position: relative;
+                top:0;
+
+            }
+            .nav__list {
+                display: flex;
+                column-gap: 30px;
+                height: 100%;
+                align-items: center; 
+                margin: 0;
+                padding: 0;
+            
+            }
+            .search-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 350px;
+                height: 35px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                overflow: hidden;
+                background-color: white;
+                margin: 0 20px; 
+                position: static; 
+            }
+
+            .search-container input[type="text"] {
+                flex: 1;
+                padding: 10px;
+                border: none;
+                outline: none;
+                font-size: 14px;
+            }
+
+            .search-container button {
+                background-color:#002c58  ;
+                color: white;
+                border: none;
+                padding: 13px 16px;
+                cursor: pointer;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+
+            .search-container button:hover {
+                background-color: #3d5670;
+            }
+            
+            /* -------------- BUTTON -------------- */
+            .btn {
+                background-color:rgb(244, 241, 234);
+                width: 4em;
+                height: 2em;
+                border-radius: 10em;
+                padding: 0 0.5em;
+                box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
+                            inset 0 8px 8px rgba(0,0,0, .1),
+                            inset 0 -4px 4px rgba(0,0,0, .1);
+                position: relative;
+                left:30px ;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                outline: none;
+                border: none;
+            }
+            
+            .btn__indicator {
+                background-color: #fff;
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                position: absolute;
+                left: 0.5em;
+                box-shadow: 0 8px 40px rgba(0,0,0, .2);
+                transition: transform 0.3s ease;
+            }
+            .btn__indicator:hover {
+                background-color: #999898;
+                box-shadow: 0 4px 8px rgba(1, 75, 140, 0.2);
+            }
+            
+            
+            /* -------------- ANIMATION ------------ */
+            .btn.active .btn__indicator {
+                transform: translateX(1.7em);
+            }
+            
+            .nav__link:hover,
+            .nav__link:focus {
+                color: rgb(134, 203, 220); 
+                
+            }
+            .B2 {
+                background-color: #4196c7;
+                text-align: center;
+                padding: 60px 20px;
+            }
+            .B2 h1 {
+                font-size: 40px;
+                margin: 5px 5px;
+                color: white;
+            }
+            .B2 h4{
+                font-size: 19px;
+                color:white;
+            }
+            .B2 p {
+                font-size: 16px;
+                color: white;
+            }
+           .login-box{
+            background-color: #ffffff;
+            padding: 40px;
+            max-width: 400px;
+            margin: -30px 500px 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.118);
+            text-align: center;
+
+           }
+           .login-box input{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+           }
+           .login-box button {
+            width: 100%;
+            padding: 12px;
+            background-color: #5298b6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 12px;
+           }
+           .login-box button:hover {
+            background-color: #436bc2;
+           }
+           .login-box button:active {
+            background-color: #3780c8;
+           }
+           .footer {
+            background-color: #5298b6;
+            padding: 30px 20px;
+            color: white;
+           }
+            .footer p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            }
+           .footer i {
+            margin-left: 10px;
+            color: white;
+            cursor: pointer;
+           }
+        </style>
+        <title>Mobile Store</title>
+    </head>
+ <body>
+    
+        <div class="top-bar">
+      <div class="top-bar__content">
+        <section class="phone">
+          <i class="fa-solid fa-phone icon"></i>
+          <span>111-222-3333</span>
+        </section>
+        <section class="email">
+          <i class="fa-solid fa-envelope icon"></i>
+          <span>info@mobilestore.com</span>
+        </section>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="bottom-bar__content">
+        <a href="#" class="logo">
+          <img class="logo__img" src="mobile-phone-store-logo-vector-26951215.jpg" alt="logo">
+        
+        </a>
+
+    
+        <nav class="navigation-bar">
+          <ul class="nav__list">
+           
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Categories</a>
+            </li>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Upcoming products</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Cart</a>
+            </li>
+            <li class="search-container">
+                <input type="text" placeholder="Search..." />
+                <button type="submit">
+                   <i class="fas fa-search"></i>
+                </button>
+            </li>
+            
+              
+            <li class="profile-pic">
+                <img class="profile-img" src="12225935.png" alt="Profile">
+            </li>
+
+          </ul>
+        
+    
+        </nav>
+  
+      </div>
+    </div>
+
+        <div class="B2">
+        <img src="mobile-phone-store-logo-vector-26951215.jpg" alt="logo" class="logo__img">
+        
+        <h1>Mobile Store</h1>
+    
+        </div>
+
+        <div class="login-box">
+            <form onsubmit="return Register()">
+            <input type="text" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="Confirm password" placeholder="Confirm Password" required>
+            <input type="text" placeholder="E-mail" required>
+            <button type="submit">Register</button>
+            </form>
+           </div>
+
+
+           <div class="footer">
+            <p>&copy; Mobile Store</p>
+            <p >Follow us on</p>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i> 
+              <i class="fa-brands fa-twitter"></i>
+        </div>
+           
+        <script>
+            function Register() {
+                const password = document.getElementById("password").value;
+                const hasMinLength = password.length >= 6;
+                if (!hasMinLength) {
+                   alert("Password must be at least 6 characters long");
+                   return false;
+                }
+                alert("Login now");
+                window.location.href = "Login.html";
+                return false;
+            }
+        </script> 
+    
+ </body>
+</html>
