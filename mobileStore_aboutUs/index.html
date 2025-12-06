@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About us</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar__content">
+                <section class="phone">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <span>111-222-3333</span>
+                </section>
+                <section class="email">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <span>info@mobilestore.com</span>
+                </section>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="bottom-bar__content">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="logo.jpeg" alt="logo">
+
+                </a>
+
+
+                <nav class="nav">
+                    <ul class="nav__list" >
+                    
+
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Categories</a>
+                        </li>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Upcoming products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Cart</a>
+                        </li>
+                        <li class="search-container">
+                            <input type="text" placeholder="Search..." />
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </li>
+
+
+                        <li class="profile-pic">
+                            <img class="profile-img" src="profile.jpg" alt="Profile">
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+
+
+            </div>
+            <div class="cover">
+                <h1 class="cover-text">About Us</h1>
+                <button class="cover-button"
+                    onclick="document.getElementById('container-1').scrollIntoView({ behavior: 'smooth' });">Read
+                    More</button>
+            </div>
+            <!-- who are we -->
+
+            <section class="container-1">
+                <div class="heading">
+                    <h1 id="aboutus1">Connecting You to the Future of Mobile</h1>
+                </div>
+                <div class="content-1" id="container-1">
+                    <div class="text">
+
+                        <h2>Who Are We ?</h2>
+                        <p>
+                            We are a trusted mobile store offering the latest smartphones, accessories, and repair
+                            services. Our goal is to
+                            provide high-quality products with excellent customer support.
+
+                            We focus on delivering a smooth shopping experience, honest advice, and competitive prices
+                            to help our customers
+                            find the perfect device for their needs.
+                        </p>
+                        <button class="container-1Btn"
+                            onclick="document.getElementById('why_choose_us').scrollIntoView({ behavior: 'smooth' });">Read
+                            More</button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="mobile-shop.jpg" alt="GEM">
+                    </div>
+                </div>
+            </section>
+            <!-- our missions -->
+            <section class="why_choose_us" id="why_choose_us">
+                <h2>Our Missions</h2>
+
+                <div class="cards-container">
+                    <div class="card">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <h3>Original Products</h3>
+                        <p>offering authentic and high-quality smartphones and accessories.</p>
+
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                        <h3>Warranty & Support</h3>
+                        <p>All products come with warranty and excellent after-sales support.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-dollar-sign fa-3x"></i>
+                        <h3>Competitive Prices</h3>
+                        <p>We provide the best prices without compromising on quality.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-truck fa-3x"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Get your products delivered quickly and safely to your doorstep.</p>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- our vision -->
+            <section id="container-2">
+                <div class="content-2">
+                    <div class="text-2">
+                        <h2>Our Vision</h2>
+                        <p>Our vision is to become the leading mobile store in the region, providing customers with
+                            innovative products, reliable service, and a seamless shopping experience that they can
+                            trust.
+                        </p>
+                        <button class="ourVision-button"
+                            onclick="document.getElementById('founders').scrollIntoView({ behavior: 'smooth' });">Read
+                            More</button>
+                    </div>
+                    <div class="container-2Img">
+                        <img src="ourVisionImg.jpg" alt="GEM">
+                    </div>
+                </div>
+            </section>
+            <!-- founders -->
+            <section class="founders" id="founders">
+                <h2>Founders</h2>
+                <div class="founders-container">
+                    <div class="founder-card">
+                        <img src="avatar1.png" alt="Founder 1">
+                        <h3>Mariam Tarek</h3>
+                        <p>Co-Founder & CEO</p>
+                    </div>
+                    <div class="founder-card">
+                        <img src="avatar2.jpg" alt="Founder 2">
+                        <h3>Habiba Magdy</h3>
+                        <p>Co-Founder & CTO</p>
+                    </div>
+                    <div class="founder-card">
+                        <img src="avatar3.jpg" alt="Founder 3">
+                        <h3>Lama Wael</h3>
+                        <p>Co-Founder & COO</p>
+                    </div>
+                    <div class="founder-card">
+                        <img src="avatar4.jpg" alt="Founder 3">
+                        <h3>Maya Sameh</h3>
+                        <p>Co-Founder & CFO</p>
+                    </div>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer>
+                <div class="footer-container">
+                    <div class="socialIcons">
+                        <a href=""><i class="fa-brands fa-facebook"></i> </a>
+                        <a href=""><i class="fa-brands fa-instagram"></i> </a>
+                        <a href=""><i class="fa-brands fa-twitter"></i> </a>
+                        <a href=""><i class="fa-brands fa-youtube"></i> </a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+</body>
